@@ -1,6 +1,6 @@
 import React from 'react';
 
-function App() {
+const App = () => {
   // const greeting = 'Hi, Tom!';
   // return <h1 className="foo">{greeting}</h1>;
   return (
@@ -14,6 +14,6 @@ function App() {
       ></input>
     </React.Fragment>
   );
-}
+};
 
 export default App;
