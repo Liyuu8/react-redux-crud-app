@@ -33,14 +33,18 @@ class EventsIndex extends Component {
   }
 
   render() {
-    const style = {
+    const tableStyle = {
+      padding: 12,
+    };
+    const fabStyle = {
       position: 'fixed',
       right: 12,
       bottom: 12,
     };
+
     return (
       <React.Fragment>
-        <Table>
+        <Table style={tableStyle}>
           <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
             <TableRow>
               <TableHeaderColumn>ID</TableHeaderColumn>
@@ -53,7 +57,7 @@ class EventsIndex extends Component {
           </TableBody>
         </Table>
         <FloatingActionButton
-          style={style}
+          style={fabStyle}
           containerElement={<Link to="/events/new"></Link>}
         >
           <ContentAdd />
